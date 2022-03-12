@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+{% load static %}
+{% load crispy_forms_tags %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="{% static 'blog/styleblog.css' %}" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/76401445f3.js" crossorigin="anonymous"></script>
+  </head>
+
+
+
+
+  
+  <body>
+
+    
+     <!-- Navbar -->
+        <nav class="navbar navbar-expand-md navbar-light bg-primary">
+  <a class="navbar-brand" href="#"><img src="{% static 'blog/images/navicon.svg' %}" alt="icon" class="nav-icon"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse d-md-flex  justify-content-md-end" id="navbarSupportedContent">
+    <ul class="navbar-nav nav-text">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'hiring-home' %}">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'about' %}">About us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Jobs</a>
+      </li>
+    </ul>
+    <a href="#" class="links"><i class="fa-solid fa-user ml-md-3 w-50 d-none d-md-block "></i> <span class="d-md-none user-text ">User Profile</span></a>
+  </div>
+</nav>
+
+
+<!-- Showcase -->
+<section class="showcase">
+    <h1 class="show-text">
+      {{object.author.name}}
+    </h1>
+</section>
+
+
+<!-- Job section -->
+<section class="job">
+  <div class="upper-job">
+  <h1>
+    {{object.role}}
+  </h1>
+    <a href="#"> <img src="{{object.author.companyprofile.image.url}}" alt="dp"></a>
+  </div>
+  <ul>
+    <li><i class="fa-solid fa-wrench"></i>Skill Set: {{object.skills}}</li>
+    <li><i class="fa-solid fa-calendar"></i>Job Post Date: {{object.date_posted| date:"d-m-Y"}}</li>
+    <li><i class="fa-solid fa-calendar"></i>Job Expiry Date: {{ object.last_date|date:"d-m-Y" }}</li>
+    <li><i class="fa-solid fa-globe"></i>No of Openings: {{object.opening}}</li>
+    <li><i class="fa-solid fa-globe"></i>Domain: {{object.domain}}</li>
+    <li><i class="fa-solid fa-location-dot"></i>Location:{{object.location}}</li>
+  </ul>
+  <button class="btn btn-primary buton">
+    Apply Now
+  </button>
+</section>
+
+
+<section class="job-des">
+  <h1>Job Description</h1>
+  <p>
+    {{object.jd}}
+  </p>
+  {% if object.author == user %}
+  <div class="button-com">
+    <a href="" class="btn btn-warning">Update</a>
+    <a href="" class="btn btn-danger">Delete</a>
+  </div>
+  {% endif %}
+</section>
+
+
+
+    <!-- Footer -->
+    <footer>
+      <div class="foot">
+        <div class="upper-foot d-sm-flex justify-content-center justify-content-sm-between ">
+            <img src="{% static 'blog/images/navicon.svg' %}" alt="icon" class="foot-icon ml-sm-4">
+            <ul class="handle-icons mt-4 mr-sm-4">
+              <a href=""><i class="fa-brands fa-instagram mr-1"></i></a>
+              <a href=""><i class="fa-brands fa-facebook mr-1"></i></a>
+              <a href=""><i class="fa-brands fa-twitter mr-1"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin mr-1"></i></a>
+            </ul>
+        </div>
+        <div class="lower-foot justify-content-center">
+            Copyright &copy; C2C Limited. All Rights Reserved
+        </div>
+      </div>
+    </footer>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.fa-user
+{
+  color: black;
+  font-size: 1.5rem; 
+}
+
+.links
+{
+  text-decoration: none;
+}
+
+.user-text
+{
+  font-style: none;
+  text-decoration: none;
+  color: gray;
+}
+
+.nav-text
+{
+  font-size: 1.28rem;
+}
+
+.nav-icon
+{
+  height: 5rem;
+  margin-bottom: 0;
+  margin-top: 0;
+
+}
+
+.navbar
+{
+  width:100%;
+  /* position:fixed!important; */
+  z-index:2;
+   /* height: 4rem;  */
+  /* padding: 0; */
+  opacity: 70%;
+  background-color: white!important;
+}
+
+.carousel-inner img
+{
+  height:600px!important;
+  width:100%!important;
+}
+
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.recent-jobs{
+    background-color: black;
+    width: 100%;
+    min-height:800px ;
+}
+
+.recent-jobs h1{
+    color: white;
+    font-weight: 600;
+    padding-top: 40px;
+    margin-bottom: 40px;
+}
+
+.job{
+    color: white;
+    background-color: transparent;
+    width: 300px;
+    height: 250px;
+    border: 2px solid grey;
+    margin: 10px;
+}
+
+.job h3{
+    font-weight: 600;
+    color: grey;
+    margin-left: 20px;
+}
+
+.job p{
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+.job button{
+    color: white;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px 30px;
+    background-color: transparent;
+}
+
+.job:hover{
+    background-image: linear-gradient(to right, #0d324d, #2a3d5e, #46476d, #62507a, #7f5a83);
+}
+
+.job:hover >h3{
+    color: white;
+}
+
+.job:hover > button 
+{ 
+    color: black;
+    background-color: white; 
+}
+
+.form-search{
+    width: 86%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.form-search input{
+    width:86%;
+    height: 40px;
+}
+
+.form-search button{
+    width: 100px;
+    height: 40px;
+}

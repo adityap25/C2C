@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- icons  -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+<link rel="stylesheet" href="{% static 'users/style.css' %}">
+  <title>Document</title>
+</head>
+<body>
+    {% load crispy_forms_tags %}
+    <div class=" flex-r container" id="signup">
+    <div class="flex-r login-wrapper">
+      <div class="login-text">
+        <div class="logo">
+          <span><i class="fab fa-speakap"></i></span>
+          <span>C2C</span>
+        </div>
+        <h1>Sign Up</h1>
+        <p>It's not long before you embark on this journey! </p>
+
+        <form class="flex-c"method="POST">
+            {% csrf_token %}
+            {{form |crispy}}
+          <input class="btn" type="submit" value="Create an Account">
+          <span class="extra-line">
+            <span>Already have an account?</span>
+            <a href="{% url 'login' %}">Sign In</a>
+          </span>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+

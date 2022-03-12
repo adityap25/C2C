@@ -1,0 +1,206 @@
+/*  */
+
+a
+{
+  text-decoration: none;
+  color: white;
+}
+
+a:hover,a:active,a:focus
+{
+  text-decoration: none;
+  outline: none;
+}
+
+
+.fa-user
+{
+  color: black;
+  font-size: 1.5rem; 
+}
+
+.links
+{
+  text-decoration: none;
+}
+
+.user-text
+{
+  font-style: none;
+  text-decoration: none;
+  color: gray;
+}
+
+.nav-text
+{
+  font-size: 1.28rem;
+}
+
+.nav-icon
+{
+  height: 5rem;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.navbar
+{
+  width:100%;
+  position:fixed!important;
+  z-index:2;
+   /* height: 4rem;  */
+  /* padding: 0; */
+  opacity: 70%;
+  background-color: black!important;
+}
+
+
+.showcase
+{
+  height: 350px;
+  background-image:url(images/pat6.jpg);
+   background-color: #cccccc; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  display: flex;
+  align-items: center;
+  opacity: 90%;
+}
+
+.show-text
+{
+  padding-left: 3rem;
+  font-size: 3.5rem;
+  color:white;
+}
+
+
+
+
+.job .upper-job
+{
+  display: flex;
+  justify-content: space-between;
+}
+
+.job .upper-job img
+{
+  height: 10rem;
+  width:10rem;
+  margin-right: 9rem;
+  border-radius: 15px;
+}
+
+
+.job i
+{
+  padding-right: 1rem;
+}
+
+.job ul li
+{
+  list-style: none;
+  padding-left: 2rem;
+  margin-top: 1rem;
+  width:33%;
+}
+
+.job ul
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: between;
+}
+
+
+
+.job h1
+{
+  padding:2rem;
+  padding-left:4rem;
+}
+
+.job
+{
+  color: white;
+  background:black;
+  padding-top: 5rem;
+  padding-left: 5rem;
+  padding-bottom: 2rem;
+}
+
+
+.buton
+{
+  margin-left:4.5rem;
+  margin-top:4rem;
+}
+
+
+.job-des
+{
+  border-top: 0.5px solid whitesmoke;
+  background-color: black;
+  color: white;
+  padding-left: 5rem;
+  margin-bottom: 0;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+
+.job-des p
+{
+  width: 95%;
+  padding-top: 2rem;
+}
+
+.job-des .button-com
+{
+  display: flex;
+  justify-content: end;
+  margin-right: 4rem;
+}
+
+.job-des .button-com a
+{
+  margin-left: 1rem;
+}
+
+
+
+/* footer */
+footer
+{
+  /* background-image: linear-gradient(to right, #0d324d, #2a3d5e, hsl(238, 22%, 35%), #62507a, #7f5a83); 
+  */
+margin-top: 0;
+background: rgb(22,160,133);
+background: linear-gradient(90deg, rgba(22,160,133,1) 27%, rgba(244,208,63,1) 100%);
+
+
+
+}
+.upper-foot img
+{
+  height: 7rem;
+}
+
+.upper-foot .handle-icons i
+{
+  font-size: 3rem;  
+  color: black;
+}
+
+.upper-foot .handle-icons i:hover
+{
+  color: white;
+}
+
+.lower-foot
+{
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  color: white;
+}

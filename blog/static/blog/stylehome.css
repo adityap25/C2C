@@ -1,0 +1,269 @@
+/*  */
+
+.fa-user
+{
+  color: black;
+  font-size: 1.5rem; 
+}
+
+.links
+{
+  text-decoration: none;
+}
+
+.user-text
+{
+  font-style: none;
+  text-decoration: none;
+  color: gray;
+}
+
+.nav-text
+{
+  font-size: 1.28rem;
+}
+
+.nav-icon
+{
+  height: 5rem;
+  margin-bottom: 0;
+  margin-top: 0;
+
+}
+
+.navbar
+{
+  width:100%;
+  position:fixed!important;
+  z-index:2;
+   /* height: 4rem;  */
+  /* padding: 0; */
+  opacity: 80%;
+  background-color: black!important;
+  background: rgb(119,161,211);
+background: linear-gradient(90deg, rgba(119,161,211,1) 61%, rgba(121,203,202,1) 100%);
+}
+
+.carousel-inner img
+{
+  height:450px!important;
+  width:100%!important;
+}
+
+/* recent jobs css*/
+
+.container-jobs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+.recent-jobs{
+    background-color: black;
+}
+
+.recent-jobs h1{
+    color: white;
+    font-weight: 600;
+    padding-top: 40px;
+    margin-bottom: 40px;
+}
+
+.job{
+    color: white;
+    background-color: transparent;
+    width: 300px;
+    height: 250px;
+    border: 2px solid grey;
+    margin: 10px;
+    transition: .3s ease-in-out;
+    border-radius: 15px;
+
+}
+
+.job h3{
+    font-weight: 600;
+    color: grey;
+    margin-left: 20px;
+}
+
+.job p{
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+.job button{
+    color: white;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px 30px;
+    background-color: transparent;
+}
+
+
+.job:hover >h3{
+    color: white;
+}
+
+.job:hover > button 
+{ 
+    color: black;
+    background-color: white; 
+}
+
+.job:hover{
+    /* background-image: linear-gradient(to right, #0d324d, #2a3d5e, hsl(238, 22%, 35%), #62507a, #7f5a83); */
+    transform: scale(1.03);
+    /* box-shadow: 0 6px 6px 0 rgba(255, 255, 255, 0.5); */
+  /* background: rgb(22,160,133);
+    background: linear-gradient(135deg, rgba(22,160,133,1) 48%, rgba(244,208,63,1) 100%); */
+background: rgb(119,161,211);
+background: linear-gradient(120deg, rgba(119,161,211,1) 26%, rgba(121,203,202,1) 100%);
+}
+
+/* contact us */
+
+.contact_us{
+    height: 450px;
+    background-color: black;
+    opacity: 85%;
+    color: white;
+}
+
+.contact_us h1{
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.contact_us_parameters{
+    width: 75%;
+}
+
+.contact_us_parameters input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    margin: 15px 10px;
+    width: 45%;
+    height: 40px;
+    border-bottom: 2px solid white;
+}
+
+.contact_us_parameters textarea{
+    outline: none;
+    background-color: transparent;
+    color: white;
+    margin: 15px 10px;
+    border: none;
+    resize: none;
+    outline: none;
+    border-bottom: 2px solid white;
+}
+
+.contact_us_parameters button{
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+
+.contact_us_parameters button:hover{
+    transform: scale(1.05);
+    background: rgb(22,160,133);
+background: linear-gradient(135deg, rgba(22,160,133,1) 50%, rgba(22,160,133,1) 0%);
+    /* background-image: linear-gradient(to right, #0d324d, #2a3d5e, #46476d, #62507a, #7f5a83); */
+}
+
+
+/* About */
+.about
+{
+  background-color: black;
+  color: white;
+  padding: 5rem 2rem;
+}
+
+.about h1
+{
+  padding-bottom: 1rem;
+}
+
+.about p
+{
+  padding:0.5rem 0;
+}
+
+/* showcase */
+.showcase
+{
+  height: 450px;
+  background-image:url(images/pat6.jpg);
+   background-color: #cccccc; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  display: flex;
+  align-items: center;
+  opacity: 90%;
+}
+
+
+
+
+
+/* footer */
+footer
+{
+  /* background-image: linear-gradient(to right, #0d324d, #2a3d5e, hsl(238, 22%, 35%), #62507a, #7f5a83); 
+  */
+
+/* background: rgb(22,160,133);
+background: linear-gradient(90deg, rgba(22,160,133,1) 27%, rgba(244,208,63,1) 100%); */
+
+background: rgb(119,161,211);
+background: linear-gradient(90deg, rgba(119,161,211,1) 26%, rgba(121,203,202,1) 100%);
+
+
+
+
+}
+.upper-foot img
+{
+  height: 7rem;
+}
+
+.upper-foot .handle-icons i
+{
+  font-size: 3rem;  
+  color: black;
+}
+
+.upper-foot .handle-icons i:hover
+{
+  color: white;
+}
+
+.lower-foot
+{
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+/* added */
+.profile
+{
+  background-color: black;
+  color:white;
+  height:50rem;
+  display: flex;
+  padding-top: 8rem;
+  padding-left: 4rem;
+}
+
+
+.profile img
+{
+  height:10rem;
+  width:10rem;
+}

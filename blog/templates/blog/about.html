@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+{% load static %}
+{% load crispy_forms_tags %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href={% static 'blog/stylehome.css' %} rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/76401445f3.js" crossorigin="anonymous"></script>
+  </head>
+
+
+
+
+
+
+  <body>
+
+
+
+       <!-- Navbar -->
+        <nav class="navbar navbar-expand-md navbar-light bg-primary">
+  <a class="navbar-brand" href="#"><img src="{% static 'blog/images/navicon.svg' %}" alt="icon" class="nav-icon"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse d-md-flex  justify-content-md-end" id="navbarSupportedContent">
+    <ul class="navbar-nav nav-text">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'hiring-home' %}">Home </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About us<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'search-job' %}">Search Jobs</a>
+      </li>
+    </ul>
+    {% if request.user.type == "TPO" %}
+    <a href="{% url 'tpoprofile' %}" class="links"><i class="fa-solid fa-user ml-md-3 w-50 d-none d-md-block "></i> <span class="d-md-none user-text ">User Profile</span></a>
+    {% else %}
+    <a href="{% url 'dashboard' %}" class="links"><i class="fa-solid fa-user ml-md-3 w-50 d-none d-md-block "></i> <span class="d-md-none user-text ">User Profile</span></a>
+    {% endif %}
+  </div>
+</nav>
+
+
+
+
+
+<!-- Showcase -->
+<section class="showcase">
+  
+</section>
+
+
+<!-- Aboutus -->
+<section class="about">
+  <h1>About Us</h1>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident repellat architecto atque alias soluta quod dolores, quas voluptatibus odio fugiat. Consectetur, impedit distinctio. Corrupti hic inventore illum reiciendis ipsum nostrum.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Error eiusvoluptatum pariatur nam ab eligendi inventore perferendis, est,aliquid animi veniam deleniti cumque, doloremque quasi nesciunt?Earum aliquam quis veritatis.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur praesentium libero dicta accusantium, reprehenderit temporibus ab iusto, architecto nihil dolorem debitis quia? Maxime a ullam sapiente quae dolor? Tempora, sint.
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum exercitationem minus quam quia fuga ratione atque aliquid iure eligendi? Porro distinctio ratione cupiditate sunt atque iure? Quidem, non? Distinctio, quasi!
+  </p>
+ <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident repellat architecto atque alias soluta quod dolores, quas voluptatibus odio fugiat. Consectetur, impedit distinctio. Corrupti hic inventore illum reiciendis ipsum nostrum.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Error eiusvoluptatum pariatur nam ab eligendi inventore perferendis, est,aliquid animi veniam deleniti cumque, doloremque quasi nesciunt?Earum aliquam quis veritatis.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur praesentium libero dicta accusantium, reprehenderit temporibus ab iusto, architecto nihil dolorem debitis quia? Maxime a ullam sapiente quae dolor? Tempora, sint.
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum exercitationem minus quam quia fuga ratione atque aliquid iure eligendi? Porro distinctio ratione cupiditate sunt atque iure? Quidem, non? Distinctio, quasi!
+  </p>
+
+</section>
+
+
+    <!-- Footer -->
+    <footer>
+      <div class="foot">
+        <div class="upper-foot d-sm-flex justify-content-center justify-content-sm-between ">
+            <img src="{% static 'blog/images/navicon.svg' %}" alt="icon" class="foot-icon ml-sm-4">
+            <ul class="handle-icons mt-4 mr-sm-4">
+              <a href=""><i class="fa-brands fa-instagram mr-1"></i></a>
+              <a href=""><i class="fa-brands fa-facebook mr-1"></i></a>
+              <a href=""><i class="fa-brands fa-twitter mr-1"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin mr-1"></i></a>
+            </ul>
+        </div>
+        <div class="lower-foot justify-content-center">
+            Copyright &copy; C2C Limited. All Rights Reserved
+        </div>
+      </div>
+    </footer>
+
+
+
+
+    
+       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_0F0916xp78DwYZBNw0Mle");
+        })();
+    </script>
+    <script src={% static 'blog/script.js' %}></script>
+</body>
+</html>
