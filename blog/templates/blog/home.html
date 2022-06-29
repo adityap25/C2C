@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>replit</title>
+    <title>Home</title>
     <link href="{% static 'blog/stylehome.css' %}" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/76401445f3.js" crossorigin="anonymous"></script>
@@ -86,7 +86,7 @@
             <p>{{post.role}}</p>
             <p>Openings :{{post.opening}}</p>
             <p>Location :{{post.location}}</p>
-            <a class="apply-button" href="{% url 'hiring-detail' post.id %}">Apply/Shortlist</a>
+            <button><a class="apply-button" href="{% url 'hiring-detail' post.id %}">Apply/Shortlist</a></button>
             </div>
             {% endfor %}
         </div>

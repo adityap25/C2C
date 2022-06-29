@@ -35,8 +35,8 @@
 {
   width:100%;
   position:fixed!important;
-  z-index:2;
-   /* height: 4rem;  */
+  z-index:1;
+   height: 4rem; 
   /* padding: 0; */
   opacity: 80%;
   background-color: black!important;
@@ -69,6 +69,26 @@ background: linear-gradient(90deg, rgba(119,161,211,1) 61%, rgba(121,203,202,1) 
     margin-bottom: 40px;
 }
 
+.apply-button 
+{
+  font-weight: 700;
+  text-decoration: none;
+  color: green!important;
+}
+
+.recent-jobs button
+{
+  margin: auto;
+}
+
+.apply-button:hover
+{
+  text-decoration: none;
+  color: green!important;
+}
+
+
+
 .job{
     color: white;
     background-color: transparent;
@@ -93,11 +113,11 @@ background: linear-gradient(90deg, rgba(119,161,211,1) 61%, rgba(121,203,202,1) 
 }
 
 .job button{
-    color: white;
-    margin-top: 20px;
-    margin-left: 20px;
-    padding: 10px 30px;
-    background-color: transparent;
+  color: white;
+  margin-top: 15px;
+  margin-left: 55px;
+  padding: 10px 30px;
+  width: 60%;
 }
 
 
@@ -221,9 +241,6 @@ background: linear-gradient(90deg, rgba(22,160,133,1) 27%, rgba(244,208,63,1) 10
 
 background: rgb(119,161,211);
 background: linear-gradient(90deg, rgba(119,161,211,1) 26%, rgba(121,203,202,1) 100%);
-
-
-
 
 }
 .upper-foot img

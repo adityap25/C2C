@@ -48,10 +48,12 @@ a:hover,a:active,a:focus
   width:100%;
   position:fixed!important;
   z-index:2;
-   /* height: 4rem;  */
+   height: 4rem; 
   /* padding: 0; */
   opacity: 70%;
   background-color: black!important;
+  background: rgb(119,161,211);
+  background: linear-gradient(90deg, rgba(119,161,211,1) 61%, rgba(121,203,202,1) 100%);
 }
 
 
@@ -175,8 +177,8 @@ footer
   /* background-image: linear-gradient(to right, #0d324d, #2a3d5e, hsl(238, 22%, 35%), #62507a, #7f5a83); 
   */
 margin-top: 0;
-background: rgb(22,160,133);
-background: linear-gradient(90deg, rgba(22,160,133,1) 27%, rgba(244,208,63,1) 100%);
+background: rgb(119,161,211);
+background: linear-gradient(90deg, rgba(119,161,211,1) 26%, rgba(121,203,202,1) 100%);
 
 
 
