@@ -48,18 +48,18 @@
     <div class="content-container text-center">
         <div class="heading">
             <h3>{{user.name}}</h3>
-            <a href="{% url 'logout' %}?next=/newentry">logout</a>
+            <a href="{% url 'logout' %}?next=/newentry" style="font-weight:700; height:65px; width: 100px; padding-top: 17px; background-color: red; text-decoration:none; color:white">logout</a>
         </div>
-        <div class="profile-box">
+        <div class="profile-box" style="padding-top: 6px; height: 600px;">
             <div id="flex">
              <form action="" method="POST" enctype="multipart/form-data">
                 {% csrf_token %}
-                <fieldset class="form-group">
+                <fieldset class="form-group" style="width: 60%; margin:auto;">
                   <legend class="border-bottom mb-4">Profile Info</legend>
                   {{u_form| crispy}}
                   {{p_form| crispy}} 
                 </fieldset>
-                <div class="form-group">
+                <div class="form-group" style="margin-top: 20px;">
                     <button class="btn btn-outline-info" type="submit">Update</button>
                   </div>
                 </form>
